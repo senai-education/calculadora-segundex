@@ -6,7 +6,7 @@
 
 body{
     background-color: whitesmoke;
-    padding: 90px 0;
+    padding: 0px 0;
 }
 
 .calculator {
@@ -61,4 +61,9 @@ body{
 button:hover{
     background-color: #FBAB18;
     color: black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
 }

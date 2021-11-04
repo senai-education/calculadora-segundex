@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="calculadoraDoisPontos.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <a href="index.html" >Clássica</a>
+    <a href="equacaoDoisPontos.html" class="selecionado">Equações Dois Pontos</a>
+    <a href="">Distancia de Ponto e Reta</a>
+    <a href="">Equação Reduzida</a>
+    <a href="">Posição Relativa das Retas</a>
+</nav>
+
+
+    <div class="calculator">
+      
+      <input type="text" disabled class="display">
+
+      <div class="pontoA">
+        <label>Ponto A</label>
+        <div><span>X:</span> <input type="number" class="ponto"></div>
+        <div><span>Y:</span> <input type="number" class="ponto"></div>
+      </div>
+      <div class="pontoA">
+        <label>Ponto B</label>
+        <div><span>X:</span> <input type="number" class="ponto"></div>
+        <div><span>Y:</span> <input type="number" class="ponto"></div>
+      </div>
+
+      <div class="calculator-buttons-first-line">
+        <button onclick="limparDisplay()">LIMPAR</button>
+    </div>
+    <div class="calculator-buttons">
+        <button onclick="inserirNumero('7')">DISTÂNCIA</button>
+        <button onclick="inserirNumero('8')">PONTO MÉDIO</button>
+        <button onclick="inserirNumero('9')">EQUAÇÃO DA RETA</button>
+        <button onclick="inserirNumero('4')">COEFICIENTE</button>
+    
+    </div>
+
+    </div>
+
+</div>
+</body>
+</html>
