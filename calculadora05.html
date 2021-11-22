@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Segundex</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/calculadora02.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Clássica</a>
+        <a href="calculadora02.html">Equações Dois Pontos</a>
+        <a href="calculadora03.html">Distância Ponto e Reta</a>
+        <a href="calculadora04.html">Equação Reduzida</a>
+        <a href="calculadora05.html" class="selecionada">Posição Relativa das Retas</a>
+    </nav>
+
+    <div class="calculadora">
+        <input type="text" disabled class="display" id="display">
+
+        <div class="pontos">
+            <label>1º Reta</label>
+            <div><span>M:</span><input type="number" class="ponto" id="firstM"></div>
+            <div><span>N:</span><input type="number" class="ponto" id="firstN"></div>
+        </div>
+
+        <div class="pontos">
+            <label>2º Reta</label>
+            <div><span>M:</span><input type="number" class="ponto" id="secundM"></div>
+            <div><span>N:</span><input type="number" class="ponto" id="secundN"></div>
+        </div>
+
+        <div class="primeira-linha">
+            <button onclick="limpar()">LIMPAR</button>
+        </div>
+
+        <div class="primeira-linha">
+            <button onclick="calcularPosicaoDasRetas()">POSIÇÃO RELATIVA DAS RETAS</button>
+        </div>
+    </div>
+    <script src="javascript/calculadora05.js"></script>
+</body>
+
+</html>
